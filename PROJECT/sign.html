@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:url('background.png');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+           width: 300px;
+        }
+        .container img{
+            
+            display: block;
+    margin: 0 auto 20px; /* Center horizontally and add space below */
+    width: 100px; /* Responsive image */
+    height: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="number"]{
+            width: 280px;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background: black;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt= "Logo"></img>
+        <h2>Sign Up</h2>
+           <form action="sign.php" method="post">
+            <input type="text"  name="first_name" placeholder="First Name" required>
+             <input type="text" name="last_name" placeholder="Last Name" required>
+              <input type="number"  name="contact_number"placeholder="Contact Number" required>
+                <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password"  name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password"  placeholder="Confirm Password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="footer">
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
